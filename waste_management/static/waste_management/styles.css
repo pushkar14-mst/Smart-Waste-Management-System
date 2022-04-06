@@ -1,0 +1,57 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
+
+.page-heading{
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 300px;
+    background-color:rgba(250, 250, 106, 0.548);
+}
+
+#main-heading{
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+    font-size: 2.6rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+.status-card{
+    border-radius: 8px;
+    background-color: hsla(0, 0%, 100%, 0.329);
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.gas-card {
+    text-align: center;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    background-color: hsla(145, 94%, 46%, 0.295);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin:10px;
+}
+
+.gas{
+    background-color:rgba(235, 235, 76, 0.507);
+    font-size:2rem;
+    text-align:center;
+}
+
+.waste-card {
+    text-align: center;
+    border-radius: 8px;
+    height: 300px;
+    width: 300px;
+    background-color: hsla(145, 94%, 46%, 0.295);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin:10px;
+}
+
+.waste{
+    background-color:rgba(235, 235, 76, 0.507);
+    font-size:2rem;
+    text-align:center;
+}
+

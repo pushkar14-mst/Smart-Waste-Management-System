@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Smart Waste Management</title>
+    <link rel="stylesheet" href="{%static 'waste_management/styles.css' %}">
+
+</head>
+<body style="background-image: url({%static 'waste_management/assets/bg.png'%});">
+    <div class="page-heading">
+        <h1 id="main-heading">Smart Waste Management</h1>
+    </div>
+    
+    <div class="container status-card">
+        <h1>Dustbin Status</h1>
+        <div class="row">
+            <div class="col-5">
+                <div class="gas-card">
+                    <img src="{% static 'waste_management/assets/bad-smell.png' %}" alt="" class="img-responsive col-6">
+                    <h2 class="gas" style="margin-bottom:10px;">Gas Level:</h2>
+                    <h2 class="gas"> {{gas}} ppm</h2>
+                </div>
+                <div class="waste-card">
+                    <img src="{% static 'waste_management/assets/sea-level.png' %}" alt="" class="img-responsive col-6">
+                    <h2 class="waste">Waste level: {{waste_level}} cm</h2>
+                </div>
+                
+            {% if warning_status %}
+                <div class="warning-status">
+                <h1 style="color: red;">Dustbin is At Risk!!</h1>
+                </div>
+            {% endif %}
+            </div>
+            <div class="col-7">
+                <img src="{% static 'waste_management/assets/dustbin_img.png' %}" alt="" class="img-responsive col-9">
+            </div>
+            
+        </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</body>
+</html>
